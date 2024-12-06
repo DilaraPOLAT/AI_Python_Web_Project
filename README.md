@@ -22,4 +22,15 @@ OpenCV: Görüntü işleme
 SQLite: Veritabanı yönetim sistemi
 ![image](https://github.com/user-attachments/assets/bc585ad3-d9bd-4483-a653-8e1bd6b41eec)
 
-![image](https://github.com/user-attachments/assets/94f88d2f-485a-490a-87c0-708f08165b00.png)
+![image](https://github.com/user-attachments/assets/493db271-3efc-4af1-b4b4-97e71f8d2619)
+
+![image](https://github.com/user-attachments/assets/839d85b8-725e-4f50-add2-48d63783ec56)
+
+![image](https://github.com/user-attachments/assets/b84df801-39b2-416a-85d9-7f2d56813372)
+
+![image](https://github.com/user-attachments/assets/ca21d6aa-e7a8-4696-99c4-7a3f31ce9049)
+
+![image](https://github.com/user-attachments/assets/3a6634c6-58ec-442d-a905-28de38ebc2ca)
+
+![image](https://github.com/user-attachments/assets/5dd41934-16f1-4a00-823f-763c24222c7c)
+
