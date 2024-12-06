@@ -1,6 +1,7 @@
 # Web Sitesi Projesi: Yapay Zeka Soruları
 Bu proje, kullanıcıların yapay zeka ile ilgili soruları yanıtladığı ve en yüksek puanların görüntülendiği bir web uygulamasıdır. Flask ile geliştirilmiş olan bu web sitesi, OpenCV kullanılarak kullanıcıların kameradan alınan görüntülerinin kameranın tam ortasında bulunmasını sağlar.
-Ayrıca kullanıcı yaş, maaş bilgilerine göre KK_NN algoritması ile kategoriz ediliyor Kategoriler: Müdür, Yönetici, Uzman
+Ayrıca kullanıcı yaş, maaş bilgilerine göre KK_NN algoritması ile kategoriz ediliyor Kategoriler: Müdür, Yönetici, Uzman.
+
 **Proje Özellikleri**
 
 *Web Tabanlı Uygulama:* Flask kullanılarak geliştirilmiş.
