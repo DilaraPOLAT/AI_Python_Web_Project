@@ -1,7 +1,7 @@
-Web Sitesi Projesi: Yapay Zeka Soruları
+# Web Sitesi Projesi: Yapay Zeka Soruları
 Bu proje, kullanıcıların zeka ile ilgili soruları yanıtladığı ve en yüksek puanların görüntülendiği bir web uygulamasıdır. Flask ile geliştirilmiş olan bu web sitesi, OpenCV kullanılarak kullanıcıların kameradan alınan görüntülerinin ortalanmasını sağlar.
 
-Proje Özellikleri
+**Proje Özellikleri**
 Web Tabanlı Uygulama: Flask kullanılarak geliştirilmiş.
 Veritabanı Entegrasyonu: Sorular veritabanında saklanır ve her oturumda rastgele 5 soru seçilir.
 Zeka Soruları: Kullanıcıların çözmesi için rastgele seçilen 5 zeka sorusu.
@@ -11,7 +11,7 @@ Kurulum ve Kullanım
 Gereksinimler
 Projenin çalışabilmesi için aşağıdaki yazılım ve kütüphanelere ihtiyaç vardır:
 
-Python 3.x
+Python 3.8
 Flask
 OpenCV
 SQLite (veritabanı için)
@@ -26,29 +26,17 @@ Proje klasörüne gidin:
 bash
 Kodu kopyala
 cd zeka-sorulari-web
-Gerekli Python kütüphanelerini yükleyin:
-
+*Gerekli Python kütüphanelerini yükleyin:*
 bash
 Kodu kopyala
 pip install -r requirements.txt
-Veritabanı Ayarları
-Veritabanını oluşturmak ve soruları eklemek için aşağıdaki adımları takip edin:
 
-Veritabanı dosyasını oluşturun (örneğin app.db).
-questions tablosunu oluşturun ve zeka sorularını buraya ekleyin.
-Uygulamayı Çalıştırma
-Proje ana dizininde, Flask uygulamasını başlatmak için:
 
-bash
-Kodu kopyala
-python app.py
-Uygulama, http://localhost:5000 adresinde çalışacaktır. Web tarayıcınızda bu URL'yi açarak uygulamayı test edebilirsiniz.
-
-Kullanım Kılavuzu
+**Kullanım Kılavuzu**
 Web sitesini açtığınızda, sistem otomatik olarak veritabanından 5 rastgele soru seçer.
 Kullanıcı her soruyu yanıtladıktan sonra, puanlama sistemine göre skoru hesaplanır ve ekrana yansıtılır.
 Kameradan alınan görüntüler, OpenCV kullanılarak ortalanır ve görüntü ekranda düzgün bir şekilde gösterilir.
-Kullanılan Teknolojiler
+**Kullanılan Teknolojiler**
 Python: Programlama dili
 Flask: Web uygulama çatısı
 OpenCV: Görüntü işleme
