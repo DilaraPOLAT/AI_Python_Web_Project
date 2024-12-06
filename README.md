@@ -2,11 +2,17 @@
 Bu proje, kullanıcıların zeka ile ilgili soruları yanıtladığı ve en yüksek puanların görüntülendiği bir web uygulamasıdır. Flask ile geliştirilmiş olan bu web sitesi, OpenCV kullanılarak kullanıcıların kameradan alınan görüntülerinin ortalanmasını sağlar.
 
 **Proje Özellikleri**
+
 Web Tabanlı Uygulama: Flask kullanılarak geliştirilmiş.
+
 Veritabanı Entegrasyonu: Sorular veritabanında saklanır ve her oturumda rastgele 5 soru seçilir.
+
 Zeka Soruları: Kullanıcıların çözmesi için rastgele seçilen 5 zeka sorusu.
+
 Puanlama Sistemi: Kullanıcıların doğru yanıtları üzerinden puanlama yapılır ve en yüksek puanlar kaydedilir.
+
 Canlı Kamera Görüntüsü: OpenCV kullanılarak kullanıcının kamerasından alınan görüntü ortalanır ve ekrana yansıtılır.
+
 Kurulum ve Kullanım
 Gereksinimler
 Projenin çalışabilmesi için aşağıdaki yazılım ve kütüphanelere ihtiyaç vardır:
