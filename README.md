@@ -20,5 +20,6 @@ Python: Programlama dili
 Flask: Web uygulama çatısı
 OpenCV: Görüntü işleme
 SQLite: Veritabanı yönetim sistemi
+![image](https://github.com/user-attachments/assets/bc585ad3-d9bd-4483-a653-8e1bd6b41eec)
 
 ![image](https://github.com/user-attachments/assets/94f88d2f-485a-490a-87c0-708f08165b00.png)
