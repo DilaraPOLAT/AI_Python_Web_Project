@@ -20,7 +20,6 @@ face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_fronta
 
 
 def euclidean_distance(x1, x2):
-    """İki nokta arasındaki Öklid mesafesini hesaplar."""
     return np.sqrt(np.sum((x1 - x2) ** 2))
 
 class KNN:
@@ -28,36 +27,30 @@ class KNN:
         self.k = k
 
     def fit(self, X, y):
-        """Modeli eğitir ve verileri saklar."""
+
         self.X_train = X
         self.y_train = y
 
     def predict(self, X):
-        """Tahmin yapar."""
+
         return np.array([self._predict(x) for x in X])
 
     def _predict(self, x):
-        """Tek bir örnek için tahmini yapar."""
-        # Mesafeleri hesapla
+
         distances = [euclidean_distance(x, x_train) for x_train in self.X_train]
-        # En yakın k komşuyu seç
         k_indices = np.argsort(distances)[:self.k]
         k_nearest_labels = [self.y_train[i] for i in k_indices]
-        # En sık görülen etiketi döndür
         most_common = Counter(k_nearest_labels).most_common(1)
         return most_common[0][0]
 
 def train_knn_model():
-    # Veritabanından verileri çekme
     conn = get_db_connection()
     users = conn.execute('SELECT age, salary, category FROM users').fetchall()
     conn.close()
 
-    # Veriyi numpy dizisine dönüştürme
     X = np.array([[user['age'], user['salary']] for user in users])
     y = np.array([user['category'] for user in users])
 
-    # Veriyi eğitim ve test olarak ayırma
     test_size = int(0.3 * len(X))  # %30 test verisi
     indices = np.arange(len(X))
     np.random.shuffle(indices)  # Veriyi karıştır
@@ -67,11 +60,9 @@ def train_knn_model():
     X_train, X_test = X[train_indices], X[test_indices]
     y_train, y_test = y[train_indices], y[test_indices]
 
-    # KNN modelini oluştur ve eğit
     knn = KNN(k=3)
     knn.fit(X_train, y_train)
 
-    # Test verisi üzerinde tahmin yap
     predictions = knn.predict(X_test)
     accuracy = np.mean(predictions == y_test)
     print(f"Model Doğruluğu: {accuracy:.2f}")
