@@ -21,4 +21,4 @@ Flask: Web uygulama çatısı
 OpenCV: Görüntü işleme
 SQLite: Veritabanı yönetim sistemi
 
-![image](![image](https://github.com/user-attachments/assets/94f88d2f-485a-490a-87c0-708f08165b00))
+![image](https://github.com/user-attachments/assets/94f88d2f-485a-490a-87c0-708f08165b00.png)
