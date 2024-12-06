@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sınav</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .video-container {
+            width: 40%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 2px solid #ddd;
+            height: 100%;
+            box-sizing: border-box;
+            position: sticky;
+            top: 0;
+        }
+
+        .video-container img {
+            width: 100%;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }submit kısı button yok
+        
+        
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1>Sınav Soruları</h1>
+        <div class="score-display">
+                <p>Hoş geldiniz, {{ session['username'] }}! Şu anki en yüksek puanınız: <strong>{{  session['score'] }}</strong></p>
+            </div>
+        <form method="POST">
+            {% for question in questions %}
+                <div>
+                    <p>{{ question.question_text }}</p>
+                    <label><input type="radio" name="{{ question.id }}" value="A"> {{ question.option_a }}</label><br>
+                    <label><input type="radio" name="{{ question.id }}" value="B"> {{ question.option_b }}</label><br>
+                    <label><input type="radio" name="{{ question.id }}" value="C"> {{ question.option_c }}</label><br>
+                    <label><input type="radio" name="{{ question.id }}" value="D"> {{ question.option_d }}</label><br>
+                </div>
+                <hr>
+            {% endfor %}
+            <button type="submit">Sonuçları Gönder</button>
+        </form>
+    </div>
+    <div class="video-container" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+    <img src="/video_feed" alt="Kamera Akışı" style="width: 100%; border: 2px solid #ddd; border-radius: 8px;">
+    <footer style="text-align: center; background-color: #f1f1f1; padding: 5px;">
+        <p>Dilara Sevim Polat</p>
+    </footer>
+</div>
+
+
+</body>
+</html>
